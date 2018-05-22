@@ -32,7 +32,7 @@ const PageLayout = () => (
                         style={{lineHeight: '64px'}}
                     >
                         <Menu.Item key="1"><Link to="/home">Home</Link></Menu.Item>
-                        <Menu.Item key="2"><Link to="/about">ABout</Link></Menu.Item>
+                        <Menu.Item key="2"><Link to="/about">About</Link></Menu.Item>
                     </Menu>
                 </Header>
                 <Layout>
