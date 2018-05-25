@@ -19,7 +19,20 @@ module.exports = merge(common, {
     },
     module: {
         // Make missing exports an error instead of warning
-        strictExportPresence: true
+        strictExportPresence: true,
+        rules: [
+            {
+                enforce: "pre",
+                test: /\.(js|jsx)$/,
+                exclude: /(node_modules|dist)/,
+                use: {
+                    loader: 'eslint-loader',
+                    options: {
+                        configFile: path.join(__dirname, '.eslintrc.dev.js')
+                    }
+                }
+            }
+        ]
     },
 
     // other-options

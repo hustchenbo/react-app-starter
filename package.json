@@ -17,6 +17,7 @@
         "@babel/preset-flow": "^7.0.0-beta.47",
         "@babel/preset-react": "^7.0.0-beta.47",
         "@babel/preset-stage-0": "^7.0.0-beta.46",
+        "babel-eslint": "^8.2.3",
         "babel-loader": "^8.0.0-beta.2",
         "babel-plugin-transform-react-remove-prop-types": "^0.4.13",
         "babel-preset-env": "^1.7.0",
@@ -27,9 +28,15 @@
         "copy-webpack-plugin": "^4.5.1",
         "cross-env": "^5.1.5",
         "css-loader": "^0.28.11",
+        "eslint": "^4.19.1",
+        "eslint-loader": "^2.0.0",
+        "eslint-plugin-babel": "^5.1.0",
+        "eslint-plugin-import": "^2.12.0",
+        "eslint-plugin-react": "^7.8.2",
         "extract-text-webpack-plugin": "^4.0.0-beta.0",
         "file-loader": "^1.1.11",
         "html-webpack-plugin": "^3.2.0",
+        "json-server": "^0.12.2",
         "prettier": "^1.12.1",
         "style-loader": "^0.21.0",
         "webpack": "^4.8.3",
@@ -46,6 +53,7 @@
         "antd": "^3.5.3",
         "axios": "^0.18.0",
         "prop-types": "^15.6.1",
+        "raven-js": "^3.25.2",
         "react": "^16.3.1",
         "react-dom": "^16.3.1",
         "react-redux": "^5.0.7",
@@ -56,6 +64,8 @@
     "scripts": {
         "dll": "webpack --mode=production --config ./tools/webpack.dll.js",
         "build": "webpack --config ./tools/webpack.prod.js",
-        "server": "node ./tools/server.js"
+        "server": "node ./tools/server.js",
+        "lint": "eslint src",
+        "lint-fix": "eslint src --fix"
     }
 }

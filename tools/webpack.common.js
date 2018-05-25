@@ -44,6 +44,13 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.js$/,
+                exclude: /(node_modules|dist)/,
+                use: {
+                    loader: 'babel-loader'
+                }
+            },
+            {
                 test: /\.(png|gif|jpe?g|svg)$/,
                 use: [
                     {
@@ -78,13 +85,6 @@ module.exports = {
                 })
             },
             {
-                test: /\.js$/,
-                exclude: /(node_modules|dist)/,
-                use: {
-                    loader: 'babel-loader'
-                }
-            },
-            {
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
                 use: [
                     'url-loader'
@@ -110,6 +110,9 @@ module.exports = {
         new webpack.DllReferencePlugin({
             context: __dirname,
             manifest: require('./vendor-manifest.json')
+        }),
+        new webpack.ProvidePlugin({
+            React: 'react'
         }),
         // extract css into its own file
         extractCSS,

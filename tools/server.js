@@ -7,10 +7,17 @@ const express = require('express');
 const webpack = require('webpack');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpackHotMiddleware = require('webpack-hot-middleware');
-
 const app = express();
 const config = require('./webpack.dev.js');
 const compiler = webpack(config);
+
+const jsonServer = require('json-server');
+const server = jsonServer.create();
+const router = jsonServer.router('db.json');
+const middlewares = jsonServer.defaults();
+
+server.use(middlewares);
+server.use(router);
 
 // Tell express to use the webpack-dev-middleware and use the webpack.config.js
 // configuration file as a base.

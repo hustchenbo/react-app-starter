@@ -1,5 +1,4 @@
-import React from 'react';
-import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
 import {Layout, Menu, Breadcrumb, Icon} from 'antd';
 import App from './App';
 
@@ -24,7 +23,7 @@ const PageLayout = () => (
         <div>
             <Layout>
                 <Header className="header">
-                    <div className="logo"/>
+                    <div className="logo" />
                     <Menu
                         theme="dark"
                         mode="horizontal"
@@ -43,12 +42,12 @@ const PageLayout = () => (
                             defaultOpenKeys={['sub1']}
                             style={{height: '100%', borderRight: 0}}
                         >
-                            <SubMenu key="sub1" title={<span><Icon type="user"/>subnav 1</span>}>
+                            <SubMenu key="sub1" title={<span><Icon type="user" />subnav 1</span>}>
                                 <Menu.Item key="1"><Link to="/home">Home</Link></Menu.Item>
                                 <Menu.Item key="2"><Link to="/about">ABout</Link></Menu.Item>
                                 <Menu.Item key="3"><Link to="/">APP</Link></Menu.Item>
                             </SubMenu>
-                            <SubMenu key="sub2" title={<span><Icon type="laptop"/>subnav 2</span>}>
+                            <SubMenu key="sub2" title={<span><Icon type="laptop" />subnav 2</span>}>
                                 <Menu.Item key="5"><Link to="/home">Home</Link></Menu.Item>
                                 <Menu.Item key="6"><Link to="/about">ABout</Link></Menu.Item>
                             </SubMenu>
@@ -62,9 +61,9 @@ const PageLayout = () => (
                         </Breadcrumb>
                         <Content style={{background: '#fff', padding: 24, margin: 0, minHeight: 280}}>
                             <Switch>
-                                <Route exact path="/" component={App}/>
-                                <Route path="/home" component={Home}/>
-                                <Route path="/about" component={About}/>
+                                <Route exact path="/" component={App} />
+                                <Route path="/home" component={Home} />
+                                <Route path="/about" component={About} />
                             </Switch>
                         </Content>
                         <Footer style={{textAlign: 'center'}}>
