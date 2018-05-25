@@ -31,6 +31,4 @@ npm run build
 
 ## todo
 
-1. 引入json-server来调试api接口
-2. 增加测试模块
-3. 增加lint
+1. 增加测试模块
