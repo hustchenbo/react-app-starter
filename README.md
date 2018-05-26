@@ -31,7 +31,7 @@ npm run build
 ```
 
 ## coding
-使用prettier-eslint-cli来format代码。它会先执行prettier再执行eseint。这样保证了eseint的高优先级。
+使用prettier-eslint-cli来format代码。它会先执行prettier再执行eslint。这样保证了eslint的高优先级。
 
 
 
