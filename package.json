@@ -36,8 +36,11 @@
         "extract-text-webpack-plugin": "^4.0.0-beta.0",
         "file-loader": "^1.1.11",
         "html-webpack-plugin": "^3.2.0",
+        "husky": "^0.14.3",
         "json-server": "^0.12.2",
-        "prettier": "^1.12.1",
+        "lint-staged": "^7.1.2",
+        "prettier": "1.12.1",
+        "prettier-eslint-cli": "^4.7.1",
         "style-loader": "^0.21.0",
         "webpack": "^4.8.3",
         "webpack-bundle-analyzer": "^2.12.0",
@@ -61,11 +64,19 @@
         "react-router-dom": "^4.2.2",
         "redux": "^3.5.2"
     },
+    "lint-staged": {
+        "*.{js,jsx}": [
+            "prettier-eslint --list-different --write",
+            "git add --force"
+        ]
+    },
     "scripts": {
+        "precommit": "lint-staged",
         "dll": "webpack --mode=production --config ./tools/webpack.dll.js",
         "build": "webpack --config ./tools/webpack.prod.js",
         "server": "node ./tools/server.js",
         "lint": "eslint src",
-        "lint-fix": "eslint src --fix"
+        "fix": "eslint src --fix",
+        "format": "prettier-eslint --list-different --write \"src/**/*.js\""
     }
 }

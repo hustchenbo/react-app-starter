@@ -10,7 +10,7 @@ import PageLayout from './components/PageLayout';
 
 // add Raven for sentry
 // Raven
-//    .config('https://ab37e72714dc4d6483e5ea7b194e828c@sentry.io/1305937')
+//    .config('https://ab37e72714dc4d6483e5ea7b194e828c@sentry.io/1335937')
 //    .install();
 
 const store = createStore(rootReducer);
@@ -25,5 +25,3 @@ render(
 if (module.hot) {
     module.hot.accept();
 }
-
-
