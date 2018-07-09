@@ -100,7 +100,9 @@ const PageLayout = () => (
                                 <Route path="/about" component={About} />
                             </Switch>
                         </Content>
-                        <Footer style={{textAlign: 'center'}}>©2018</Footer>
+                        <Footer style={{textAlign: 'center'}}>
+                            ©Chen Bo 2018
+                        </Footer>
                     </Layout>
                 </Layout>
             </Layout>

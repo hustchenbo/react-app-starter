@@ -18,7 +18,7 @@ npm run server
 
 ```
 
-visit http://localhost:3000/about
+visit http://localhost:3000/
 
 
 ## production mode
