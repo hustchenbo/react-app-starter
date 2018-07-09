@@ -16,6 +16,9 @@ npm run dll
 
 npm run server
 
+// if use mock data 
+npm run mock
+
 ```
 
 visit http://localhost:3000/
