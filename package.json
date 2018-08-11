@@ -9,8 +9,8 @@
         "not ie < 9"
     ],
     "devDependencies": {
-        "@babel/core": "^7.0.0-beta.47",
-        "@babel/node": "^7.0.0-beta.47",
+        "@babel/core": "^7.0.0-beta.50",
+        "@babel/node": "^7.0.0-beta.50",
         "@babel/plugin-proposal-class-properties": "7.0.0-beta.54",
         "@babel/plugin-proposal-decorators": "7.0.0-beta.54",
         "@babel/plugin-proposal-do-expressions": "7.0.0-beta.54",
@@ -27,10 +27,10 @@
         "@babel/plugin-proposal-throw-expressions": "7.0.0-beta.54",
         "@babel/plugin-syntax-dynamic-import": "7.0.0-beta.54",
         "@babel/plugin-syntax-import-meta": "7.0.0-beta.54",
-        "@babel/plugin-transform-react-constant-elements": "^7.0.0-beta.47",
-        "@babel/plugin-transform-react-inline-elements": "^7.0.0-beta.47",
+        "@babel/plugin-transform-react-constant-elements": "^7.0.0-beta.54",
+        "@babel/plugin-transform-react-inline-elements": "^7.0.0-beta.54",
         "@babel/preset-env": "7.0.0-beta.54",
-        "@babel/preset-flow": "^7.0.0-beta.47",
+        "@babel/preset-flow": "^7.0.0-beta.54",
         "@babel/preset-react": "7.0.0-beta.54",
         "babel-eslint": "^8.2.3",
         "babel-loader": "^8.0.0-beta.0",
@@ -66,7 +66,7 @@
         "webpack-node-externals": "^1.7.2"
     },
     "dependencies": {
-        "antd": "^3.5.3",
+        "antd": "^3.8.0",
         "axios": "^0.18.0",
         "prop-types": "^15.6.1",
         "raven-js": "^3.25.2",
