@@ -6,11 +6,10 @@ module.exports = {
             '@babel/preset-env',
             {
                 targets: {
-                    node: 'current',
-                },
-            },
+                    node: 'current'
+                }
+            }
         ],
-        ['@babel/preset-stage-0', {decoratorsLegacy: true}],
         '@babel/preset-flow',
         '@babel/preset-react'
     ],
