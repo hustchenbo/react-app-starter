@@ -1,10 +1,11 @@
 import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
 import {Layout, Menu, Breadcrumb, Icon} from 'antd';
 import App from './App';
-
+import DemoPageList from '../containers/DemoPage/List';
 const {SubMenu} = Menu;
 const {Header, Content, Footer, Sider} = Layout;
 
+// todo 这个页面作为首页入口 后续需要整理
 const Home = () => (
     <div>
         <h2>Home</h2>
@@ -49,25 +50,22 @@ const PageLayout = () => (
                                 key="sub1"
                                 title={
                                     <span>
-                                        <Icon type="user" />subnav 1
+                                        <Icon type="user" />基础页面
                                     </span>
                                 }
                             >
                                 <Menu.Item key="1">
-                                    <Link to="/home">Home</Link>
+                                    <Link to="/">APP</Link>
                                 </Menu.Item>
                                 <Menu.Item key="2">
-                                    <Link to="/about">ABout</Link>
-                                </Menu.Item>
-                                <Menu.Item key="3">
-                                    <Link to="/">APP</Link>
+                                    <Link to="/demoPageList">DemoList</Link>
                                 </Menu.Item>
                             </SubMenu>
                             <SubMenu
                                 key="sub2"
                                 title={
                                     <span>
-                                        <Icon type="laptop" />subnav 2
+                                        <Icon type="laptop" />其他页面
                                     </span>
                                 }
                             >
@@ -98,6 +96,10 @@ const PageLayout = () => (
                                 <Route exact path="/" component={App} />
                                 <Route path="/home" component={Home} />
                                 <Route path="/about" component={About} />
+                                <Route
+                                    path="/demoPageList"
+                                    component={DemoPageList}
+                                />
                             </Switch>
                         </Content>
                         <Footer style={{textAlign: 'center'}}>

@@ -13,5 +13,6 @@ module.exports = {
         '@babel/preset-flow',
         '@babel/preset-react'
     ],
+    plugins: ['@babel/plugin-transform-runtime', 'transform-class-properties'],
     ignore: ['node_modules', 'build']
 };

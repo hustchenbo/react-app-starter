@@ -1,6 +1,7 @@
 import {render} from 'react-dom';
-import {createStore} from 'redux';
 import {Provider} from 'react-redux';
+import {createStore, compose, applyMiddleware} from 'redux';
+import thunk from 'redux-thunk';
 import rootReducer from './reducers';
 // import Raven from 'raven-js';
 
@@ -13,7 +14,8 @@ import PageLayout from './components/PageLayout';
 //    .config('https://ab37e72714dc4d6483e5ea7b194e828c@sentry.io/1335937')
 //    .install();
 
-const store = createStore(rootReducer);
+const store = createStore(rootReducer, compose(applyMiddleware(thunk)));
+
 render(
     <Provider store={store}>
         <PageLayout />

@@ -5,5 +5,6 @@
  */
 
 module.exports = {
-    '/v1/audio/add': '/success'
+    '/demo/list': '/demo-list',
+    '/demo/delete': '/demo-delete'
 };
