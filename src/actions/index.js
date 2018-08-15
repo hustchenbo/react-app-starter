@@ -1,3 +1,8 @@
+/**
+ * @file actions/index
+ * @author chenbo09
+ */
+
 let nextTodoId = 0;
 export const addTodo = text => ({
     type: 'ADD_TODO',

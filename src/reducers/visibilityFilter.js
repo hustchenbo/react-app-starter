@@ -1,3 +1,8 @@
+/**
+ * @file reducers/visibilityFilter
+ * @author chenbo09
+ */
+
 import {VisibilityFilters} from '../actions';
 
 const visibilityFilter = (state = VisibilityFilters.SHOW_ALL, action) => {

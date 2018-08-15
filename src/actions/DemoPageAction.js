@@ -3,7 +3,7 @@
  * @author chenbo09
  */
 import _ from 'lodash';
-const axios = require('axios');
+import axios from 'axios';
 import * as CONST from '../constants/ActionTypes';
 import api from './api';
 
@@ -31,7 +31,6 @@ export function deleteUser(param) {
     return async (dispatch, getState) => {
         const response = await axios.post(api.deleteUser, param);
         if (response.data.success === true) {
-
         }
         else {
             throw new Error('删除错误');

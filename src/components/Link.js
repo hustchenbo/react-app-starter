@@ -1,3 +1,8 @@
+/**
+ * @file Link
+ * @author chenbo09
+ */
+
 import PropTypes from 'prop-types';
 
 const Link = ({active, children, onClick}) => (

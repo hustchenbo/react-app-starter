@@ -1,3 +1,8 @@
+/**
+ * @file reducers/demoList
+ * @author chenbo09
+ */
+
 import {GET_DEMO_LIST} from '../constants/ActionTypes';
 
 const demoList = (state = {count: 0, totalCount: []}, action) => {

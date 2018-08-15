@@ -1,3 +1,8 @@
+/**
+ * @file main
+ * @author chenbo09
+ */
+
 import {render} from 'react-dom';
 import {Provider} from 'react-redux';
 import {createStore, compose, applyMiddleware} from 'redux';

@@ -1,7 +1,5 @@
 /**
- * @file actions/api.js
- *
- * API接口集合
+ * @file actions/api.js API接口集合
  * @author chenbo09
  */
 

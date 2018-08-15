@@ -1,3 +1,8 @@
+/**
+ * @file components/DemoPage/list
+ * @author chenbo09
+ */
+
 import _ from 'lodash';
 import {Table, Button, Modal, message, Divider} from 'antd';
 

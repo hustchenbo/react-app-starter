@@ -1,3 +1,8 @@
+/**
+ * @file VisibleTodoList
+ * @author chenbo09
+ */
+
 import {connect} from 'react-redux';
 import {toggleTodo, VisibilityFilters} from '../actions';
 import TodoList from '../components/TodoList';

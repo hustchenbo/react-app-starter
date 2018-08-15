@@ -1,3 +1,8 @@
+/**
+ * @file Footer
+ * @author chenbo09
+ */
+
 import FilterLink from '../containers/FilterLink';
 import {VisibilityFilters} from '../actions';
 

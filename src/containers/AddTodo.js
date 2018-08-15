@@ -1,3 +1,8 @@
+/**
+ * @file AddTodo
+ * @author chenbo09
+ */
+
 import {connect} from 'react-redux';
 import {addTodo} from '../actions';
 

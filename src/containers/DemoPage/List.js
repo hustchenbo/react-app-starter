@@ -1,3 +1,8 @@
+/**
+ * @file DemoPage/List
+ * @author chenbo09
+ */
+
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as DemoPageAction from '../../actions/DemoPageAction';

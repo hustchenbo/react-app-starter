@@ -1,3 +1,8 @@
+/**
+ * @file FilterLink
+ * @author chenbo09
+ */
+
 import {connect} from 'react-redux';
 import {setVisibilityFilter} from '../actions';
 import Link from '../components/Link';

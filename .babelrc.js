@@ -1,5 +1,9 @@
-// Babel configuration
-// https://babeljs.io/docs/usage/api/
+/**
+ * @file Babel configuration
+ * https://babeljs.io/docs/usage/api/
+ * @author chenbo09
+ */
+
 module.exports = {
     presets: [
         [

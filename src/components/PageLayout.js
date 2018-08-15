@@ -1,3 +1,8 @@
+/**
+ * @file PageLayout
+ * @author chenbo09
+ */
+
 import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
 import {Layout, Menu, Breadcrumb, Icon} from 'antd';
 import App from './App';
@@ -102,9 +107,7 @@ const PageLayout = () => (
                                 />
                             </Switch>
                         </Content>
-                        <Footer style={{textAlign: 'center'}}>
-                            ©Chen Bo 2018
-                        </Footer>
+                        <Footer style={{textAlign: 'center'}}>©XXX 2018</Footer>
                     </Layout>
                 </Layout>
             </Layout>

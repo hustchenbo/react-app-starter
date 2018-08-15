@@ -1,3 +1,8 @@
+/**
+ * @file Todo
+ * @author chenbo09
+ */
+
 import PropTypes from 'prop-types';
 
 const Todo = ({onClick, completed, text}) => (

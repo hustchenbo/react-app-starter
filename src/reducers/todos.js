@@ -1,3 +1,8 @@
+/**
+ * @file reducers/todos
+ * @author chenbo09
+ */
+
 const todos = (state = [], action) => {
     switch (action.type) {
         case 'ADD_TODO':
